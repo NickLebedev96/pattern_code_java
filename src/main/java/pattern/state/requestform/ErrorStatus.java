@@ -15,7 +15,7 @@ public class ErrorStatus implements RequestState {
     }
 
     @Override
-    public void nextState(RequestState requestState) throws ChangeStateException {
-        throw new ChangeStateException();
+    public RequestState nextState(RequestState requestState) throws ChangeStateException {
+        throw new ChangeStateException("Статус нельзя изменить");
     }
 }

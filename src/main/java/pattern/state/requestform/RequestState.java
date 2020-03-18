@@ -6,5 +6,5 @@ public interface RequestState {
 
     void getDescription();
     List<RequestState> getAvailableNextState();
-    void nextState(RequestState requestState) throws ChangeStateException;
+    RequestState nextState(RequestState requestState) throws ChangeStateException;
 }
